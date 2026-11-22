@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "itzmark",
+  "version": "${version}",
+  "name": "itzMark Client",
+  "description": "Mod menu, HUD, zoom, skin/cape changer and FPS boost. Dark red and black theme.",
+  "authors": ["itzMark"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.itzmark.client.ItzMarkClient"]
+  },
+  "mixins": ["itzmarkclient.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "sodium": "*",
+    "lithium": "*",
+    "ferritecore": "*",
+    "entityculling": "*",
+    "immediatelyfast": "*"
+  }
+}
